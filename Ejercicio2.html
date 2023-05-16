@@ -1,0 +1,31 @@
+<html>
+<head>
+
+<script>
+    function Invertir(){
+    var palabra = document.getElementById("Palabra").value;
+    var invertida='';
+ 
+    for (var i=palabra.length-1; i>=0; i--){
+        invertida = invertida+palabra[i];
+    }
+    document.getElementById("demo").innerHTML = invertida;
+
+}
+    </script>
+
+</head>
+<body>
+
+    <h2>Ejercicio 2 - Invertir palabra</h2>    
+    <p>Ingrese la palabra: </p><input type="text" id="Palabra">
+    <button onclick="Invertir()">Invertir</button>
+
+<div>
+<p id="demo" >La palabra invertida es:</p>
+</div>
+
+   
+    </body>
+    </html>
+    
