@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Ejercicio 1 - Día de la fecha actual</h2>  
+
+<p id="demo"></p>
+
+<script>
+const d = new Date().getDay();
+let Dtext="Lunes";
+
+
+switch (d){
+case 0:
+Dtext="Domingo";
+break;
+case 1:
+Dtext="Lunes";
+break;
+case 2:
+Dtext="Martes";
+break;
+case 3:
+Dtext="Miercoles";
+break;
+case 4:
+Dtext="Jueves";
+break;
+case 5:
+Dtext="Viernes";
+break;
+case 6:
+Dtext="Sábado";
+break;
+}
+
+document.getElementById("demo").innerHTML = Dtext;
+</script>
+
+</body>
+</html>
