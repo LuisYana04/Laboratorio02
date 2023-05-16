@@ -1,0 +1,29 @@
+<html>
+<head>
+
+<script>
+    function CalcularDias(){
+    const fecha = new Date();
+    const d_Arequipa = new Date("08/15/2023")
+    let diferencia = d_Arequipa.getTime() - fecha.getTime();
+    let diferencia_dias = Math.round(Math.sqrt((Math.pow(diferencia,2)))/1000/60/60/24);
+    var respuesta = "Faltan "+diferencia_dias+" para la fiesta de Arequipa."
+    
+    document.getElementById("demo").innerHTML = respuesta;
+    }
+    </script>
+
+</head>
+<body>
+
+    <h2>Ejercicio 3 - Calcular días para la fiesta de Arequipa</h2>    
+        <button onclick="CalcularDias()">Click para saber cuanto falta para el día de Arequipa</button>
+
+<div>
+<p id="demo"></p>
+</div>
+
+   
+    </body>
+    </html>
+    
