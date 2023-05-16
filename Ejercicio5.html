@@ -1,0 +1,28 @@
+<html>
+<head>
+
+<script>
+    function CrearTabla(){
+    const n = document.getElementById("cantidad").value;
+    for (var i=0; i<n; i++){
+        Math.random()
+    }
+    document.getElementById("demo").innerHTML = url_corregida;
+    }
+    </script>
+
+</head>
+<body>
+
+    <h2>Ejercicio 5 - Tabla de valores y suma</h2>    
+    <p>Ingrese la cantidad de valores de la tabla: </p><input type="text" id="cantidad">
+    <button onclick="CrearTabla()">Generar Tabla</button>
+
+<div>
+
+<p id="demo"></p>
+</div>
+
+   
+    </body>
+    </html>
