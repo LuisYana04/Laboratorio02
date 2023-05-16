@@ -1,0 +1,35 @@
+<html>
+<head>
+
+<script>
+    function Codigosinguiones(){
+    var url = document.getElementById("URL").value;
+    var url_corregida = "";
+    for (var i=0; i<url.length; i++){
+        if (url.charAt(i)==="-"){
+            url_corregida = url_corregida;
+        }
+        else{
+            url_corregida=url_corregida+url.charAt(i);
+        }
+    }
+
+    document.getElementById("demo").innerHTML = url_corregida;
+    }
+    </script>
+
+</head>
+<body>
+
+    <h2>Ejercicio 4 - Eliminar guiones de link Meet</h2>    
+    <p>Ingrese el link: </p><input type="text" id="URL">
+    <button onclick="Codigosinguiones()">Eliminar guiones</button>
+
+<div>
+<p>URL sin guiones: </p>
+<p id="demo"></p>
+</div>
+
+   
+    </body>
+    </html>
